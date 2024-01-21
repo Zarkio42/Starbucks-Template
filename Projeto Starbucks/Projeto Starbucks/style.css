@@ -7,6 +7,7 @@
 
 body{
     padding: 20px 100px 0 100px;
+    transition: 1.5s;
 }
 
 .cafeBtn{
@@ -34,7 +35,7 @@ p{
     margin: 20px 0 20px 0;
 }
 
-span{
+.starbucksTxt{
     color: #017143;
     font-weight: 900;
 }
@@ -48,6 +49,7 @@ span{
     z-index: 99;
     box-shadow: none;
     -webkit-box-shadow: none;
+    transition: 1.3s;
 }
 
 .miniVerde, .miniLaranja, .miniRosa{
@@ -96,6 +98,7 @@ span{
     top: 0;
     left: 0;
     clip-path: circle(600px at right 800px);
+    transition: 1.3s;
 }
 
 .OnOffDark{
@@ -107,6 +110,7 @@ span{
 i{
     color: #004f2e;
     font-size: 25px;
+    transition: 1.5s;
 }
 
 .btnLight{
@@ -115,7 +119,25 @@ i{
     cursor: pointer;
 }
 
-.dark{
-    background-color: black;
-    color: #fff;
+.idark{
+    color: #fff!important;
+    transition: 1.5s;
 }
+
+.dark{
+    /*#0e0e0ee6  #14271f  #043b24*/
+    background-color: #14271f;
+    color: #fff!important;
+    transition: 1.5s;
+    .cafeBtn{
+        background-color: #fff;
+        color:#043b24
+    }
+    .starbucksTxt{
+        color: #fff;
+    }
+    .circulo{
+        background-color: #00472b;
+    }
+}
+

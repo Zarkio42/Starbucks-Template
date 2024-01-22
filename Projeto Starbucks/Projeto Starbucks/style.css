@@ -35,6 +35,17 @@ p{
     margin: 20px 0 20px 0;
 }
 
+.githubLink{
+    text-decoration: none;
+    color: #01653c;
+    font-size: 30px!important;
+}
+
+.navIcons{
+    display: flex;
+    gap: 30px;
+}
+
 .starbucksTxt{
     color: #017143;
     font-weight: 900;
@@ -49,7 +60,7 @@ p{
     z-index: 99;
     box-shadow: none;
     -webkit-box-shadow: none;
-    transition: 1.3s;
+    transition: transform 0.3s ease-in-out;
 }
 
 .miniVerde, .miniLaranja, .miniRosa{
@@ -105,6 +116,7 @@ p{
     width: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 i{
@@ -126,18 +138,23 @@ i{
 
 .dark{
     /*#0e0e0ee6  #14271f  #043b24*/
-    background-color: #14271f;
+    background-color: #043b24;
     color: #fff!important;
     transition: 1.5s;
     .cafeBtn{
         background-color: #fff;
-        color:#043b24
+        color:#043b24;
+        font-weight: 600;
     }
     .starbucksTxt{
         color: #fff;
     }
     .circulo{
-        background-color: #00472b;
+        background-color: #01653c;
+    }
+    .githubLink{
+        text-decoration: none;
+        color: #ffffff;
     }
 }
 

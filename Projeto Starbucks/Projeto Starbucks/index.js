@@ -7,6 +7,7 @@ const circulo = document.getElementById("circulo");
 
 miniaturaRosa.addEventListener("click", () =>{
     let page = document.body
+
     if(page.className.includes("dark")){
         circulo.style.backgroundColor = "#781b5c"
         imgStarbucks.src = "./images/img3.png";
@@ -19,6 +20,7 @@ miniaturaRosa.addEventListener("click", () =>{
 
 miniaturaLaranja.addEventListener("click", () =>{
     let page = document.body
+
     if(page.className.includes("dark")){
         imgStarbucks.src = "./images/img2.png";
         circulo.style.backgroundColor = "#b05e64"
@@ -31,8 +33,9 @@ miniaturaLaranja.addEventListener("click", () =>{
 
 miniaturaVerde.addEventListener("click", () =>{
     let page = document.body
+
     if(page.className.includes("dark")){
-        circulo.style.backgroundColor = "#00472b"
+        circulo.style.backgroundColor = "#01653c"
         imgStarbucks.src = "./images/img1.png"
     }
     else{

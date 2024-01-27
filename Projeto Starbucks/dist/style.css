@@ -146,11 +146,11 @@ i{
         color:#043b24;
         font-weight: 600;
     }
+    .cafeBtn:hover{
+        background-color: #dbdbdb;
+    }
     .starbucksTxt{
         color: #fff;
-    }
-    .circulo{
-        background-color: #01653c;
     }
     .githubLink{
         text-decoration: none;

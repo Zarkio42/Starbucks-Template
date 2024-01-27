@@ -1,3 +1,5 @@
+import Swal from "sweetalert2";
+
 const imgStarbucks = document.getElementById("starbucks");
 const miniaturaRosa = document.getElementById("minRosa");
 const miniaturaVerde = document.getElementById("minVerde");
@@ -59,4 +61,14 @@ function DarkMode(){
         page.classList.remove("dark");
     }
 
+}
+
+function pedirCafe() {
+    Swal.fire({
+        position: "center",
+        icon: "success",
+        title: "Pedido realizado com sucesso!",
+        showConfirmButton: false,
+        timer: 1500
+      });
 }

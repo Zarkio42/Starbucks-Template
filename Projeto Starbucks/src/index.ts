@@ -7,14 +7,8 @@ const circulo = document.getElementById("circulo");
 miniaturaRosa?.addEventListener("click", () => {
     let page: HTMLElement = document.body
     if (circulo) {
-        if (page.className.includes("dark")) {
-            circulo.style.backgroundColor = "#781b5c"
-            imgStarbucks.src = "./images/img3.png";
-        }
-        else {
-            imgStarbucks.src = "./images/img3.png";
-            circulo.style.backgroundColor = "#bf3899"
-        }
+        imgStarbucks.src = "./images/img3.png";
+        circulo.style.backgroundColor = "#bf3899"
     }
 })
 
@@ -22,36 +16,23 @@ miniaturaLaranja?.addEventListener("click", () => {
     let page: HTMLElement = document.body
 
     if (circulo) {
-        if (page.className.includes("dark")) {
-            imgStarbucks.src = "./images/img2.png";
-            circulo.style.backgroundColor = "#b05e64"
-        }
-        else {
-            imgStarbucks.src = "./images/img2.png";
-            circulo.style.backgroundColor = "#e9acb5"
-        }
-        console.log("entrei")
+        imgStarbucks.src = "./images/img2.png";
+        circulo.style.backgroundColor = "#e9acb5"
     }
 })
 
 miniaturaVerde?.addEventListener("click", () => {
-    let page = document.body
+    let page: HTMLElement = document.body
 
     if (circulo) {
-        if (page.className.includes("dark")) {
-            circulo.style.backgroundColor = "#01653c"
-            imgStarbucks.src = "./images/img1.png"
-        }
-        else {
-            imgStarbucks.src = "./images/img1.png"
-            circulo.style.backgroundColor = "#017143"
-        }
+        imgStarbucks.src = "./images/img1.png"
+        circulo.style.backgroundColor = "#017143"
     }
 })
 
 function DarkMode() {
-    let iconLight = document.getElementById("iconLight");
-    let page = document.body
+    let iconLight: HTMLElement | null = document.getElementById("iconLight");
+    let page: HTMLElement = document.body
 
     if (!iconLight?.className.includes("idark")) {
         iconLight?.classList.add("idark");
@@ -61,5 +42,8 @@ function DarkMode() {
         iconLight.classList.remove("idark");
         page.classList.remove("dark");
     }
+}
 
+function pedirCafe() {
+    alert("Pedido realizado com sucesso!")
 }

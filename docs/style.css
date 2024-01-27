@@ -159,3 +159,144 @@ i{
     }
 }
 
+@media only screen and (max-width: 768px){
+    .circulo{
+        background-color: #017143;
+        width: 100%;
+        position: absolute;
+        top: 9%;
+        bottom: 9%;
+        left: 0;
+        right: 0;
+        clip-path: circle(135px);
+        transition: 1.3s;
+    }
+    body{
+        padding: 25px 0 0 10px;
+        transition: 1.5s;
+        background-color: #fff;
+    }
+    
+    .cafeBtn{
+        background-color: #017143;
+        border: none;
+        border-radius: 20px;
+        padding: 8px 20px;
+        margin-top: 10px;
+        color: white;
+        font-size: 10pt;
+        cursor: pointer;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+    
+    .cafeBtn:hover{
+        background-color: #004f2e;
+    }
+    
+    h2{
+        font-size: 20pt;
+        font-weight: 500;
+    }
+    
+    p{
+        font-size: 12pt;
+        margin: 20px 0 20px 0;
+        display: none;
+    }
+    
+    .githubLink{
+        text-decoration: none;
+        color: #01653c;
+        font-size: 30px!important;
+    }
+    
+    .navIcons{
+        width: 100%;
+        display: flex;
+        gap: 20px;
+        justify-content: flex-end;
+        padding-right: 10px;
+    }
+    
+    .starbucksTxt{
+        color: #017143;
+        font-weight: 900;
+    }
+    
+    .logo-starbucks{
+        width: 50px;
+    }
+    
+    .copoVerde{
+        width: 175px;
+        z-index: 99;
+        box-shadow: none;
+        -webkit-box-shadow: none;
+        transition: transform 0.3s ease-in-out;
+    }
+    
+    .miniVerde, .miniLaranja, .miniRosa{
+        width: 40px;
+        cursor: pointer;
+    }
+    
+    .box1{
+        margin-top: 30px;
+        width: 100%;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .box-text{
+        width: 100%;
+    }
+    
+    .box-image{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 25px;
+    }
+    
+    .miniaturas{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        padding-bottom: 15px;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        left: 0;
+    }
+    
+    .miniatura{
+        transition: 0.5s;
+    }
+    
+    .miniatura:hover{
+        transition: 1s;
+        transform: translateY(-25px);
+    }
+    
+    .OnOffDark{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    i{
+        color: #004f2e;
+        font-size: 25px;
+        transition: 1.5s;
+    }
+    
+    .btnLight{
+        border: none;
+        background-color: #ffffff00;
+        cursor: pointer;
+    }
+}
+

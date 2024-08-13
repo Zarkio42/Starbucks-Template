@@ -6,8 +6,18 @@
 }
 
 body {
-    padding: 20px 100px 0 100px;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
     transition: 1.5s;
+}
+
+.OnOffDark {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 35px;
 }
 
 .cafeBtn {
@@ -79,11 +89,10 @@ p {
 }
 
 .box-text {
-    width: 600px;
+    padding: 0 0 0 35px;
 }
 
 .box-image {
-    width: 600px;
     display: flex;
     justify-content: flex-end;
     margin-top: 250px;
@@ -114,13 +123,6 @@ p {
     left: 0;
     clip-path: circle(40% at right 800px);
     transition: 1.3s;
-}
-
-.OnOffDark {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
 i {

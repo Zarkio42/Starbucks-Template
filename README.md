@@ -4,7 +4,7 @@ Este projeto é uma imitação do layout da Starbucks, criado como parte do meu 
 
 ## 🔗 Deploy
 
-Você pode visualizar o projeto ao vivo no link abaixo:
+Você pode visualizar o projeto ao vivo no link a seguir:
 [Starbucks Template](https://zarkio42.github.io/Starbucks-Template/)
 
 ## 🛠️ Tecnologias Utilizadas

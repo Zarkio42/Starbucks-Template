@@ -5,11 +5,24 @@
     box-sizing: border-box;
 }
 
+html, body {
+    overflow-x: hidden;
+}
+
 body {
     position: relative;
-    width: 100vw;
+    width: 100%; 
     height: 100vh;
     transition: 1.5s;
+    overflow-x: hidden; 
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding-bottom: 20px;
+    z-index: 100;
 }
 
 .OnOffDark {
@@ -71,6 +84,7 @@ p {
     box-shadow: none;
     -webkit-box-shadow: none;
     transition: transform 0.3s ease-in-out;
+    transform: translateY(90px); 
 }
 
 .miniVerde,
@@ -95,14 +109,12 @@ p {
 .box-image {
     display: flex;
     justify-content: flex-end;
-    margin-top: 250px;
 }
 
 .miniaturas {
     display: flex;
     justify-content: center;
     gap: 15px;
-    padding-bottom: 10px;
 }
 
 .miniatura {
@@ -143,7 +155,6 @@ i {
 }
 
 .dark {
-    /*#0e0e0ee6  #14271f  #043b24*/
     background-color: #043b24;
     color: #fff !important;
     transition: 1.5s;
@@ -173,7 +184,7 @@ i {
         background-color: rgb(1, 113, 67);
         width: 100%;
         position: absolute;
-        clip-path: circle(80% at right 100%);
+        clip-path: circle(70% at right 100%);
         transition: all 1.3s ease 0s;
     }
 
@@ -188,7 +199,7 @@ i {
         border: none;
         border-radius: 20px;
         padding: 8px 20px;
-        margin-top: 10px;
+        margin-top: 0;
         color: white;
         font-size: 10pt;
         cursor: pointer;
@@ -234,12 +245,12 @@ i {
     }
 
     .copoVerde {
-        margin-top: 0;
-        width: 175px;
+        width: 195px;
         z-index: 99;
         box-shadow: none;
         -webkit-box-shadow: none;
         transition: transform 0.3s ease-in-out;
+        transform: translateY(50px); 
     }
 
     .miniVerde,
@@ -250,7 +261,7 @@ i {
     }
 
     .box1 {
-        margin-top: 30px;
+        margin-top: 0;
         width: 100%;
         display: grid;
         justify-content: center;
@@ -259,24 +270,20 @@ i {
 
     .box-text {
         width: 100%;
+        padding: 0;
     }
 
     .box-image {
         width: 100%;
         display: flex;
         justify-content: center;
-        margin-top: 30%;
+        margin-top: 0;
     }
 
     .miniaturas {
         display: flex;
         justify-content: center;
         align-items: center;
-        padding-bottom: 15px;
-        position: absolute;
-        bottom: 0;
-        right: 0;
-        left: 0;
     }
 
     .miniatura {
@@ -314,7 +321,7 @@ i {
         background-color: rgb(1, 113, 67);
         width: 100%;
         position: absolute;
-        clip-path: circle(80% at right 100%);
+        clip-path: circle(60% at right 100%);
         transition: all 1.3s ease 0s;
     }
 
@@ -328,10 +335,10 @@ i {
         background-color: #017143;
         border: none;
         border-radius: 20px;
-        padding: 8px 20px;
+        padding: 12px 32px;
         margin-top: 10px;
         color: white;
-        font-size: 10pt;
+        font-size: 14pt;
         cursor: pointer;
         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     }
@@ -376,11 +383,12 @@ i {
 
     .copoVerde {
         margin-top: 0;
-        width: 270px;
+        width: 260px;
         z-index: 99;
         box-shadow: none;
         -webkit-box-shadow: none;
         transition: transform 0.3s ease-in-out;
+        transform: none;
     }
 
     .miniVerde,
@@ -400,6 +408,7 @@ i {
 
     .box-text {
         width: 100%;
+        padding: 0;
     }
 
     .box-image {
@@ -413,11 +422,6 @@ i {
         display: flex;
         justify-content: center;
         align-items: center;
-        padding-bottom: 15px;
-        position: absolute;
-        bottom: 0;
-        right: 0;
-        left: 0;
     }
 
     .miniatura {
